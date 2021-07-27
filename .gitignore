@@ -1,0 +1,6 @@
+venv
+__pycache__
+.idea
+test.py
+test_image.png
+media
