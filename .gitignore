@@ -4,4 +4,5 @@ __pycache__
 test.py
 test_image.png
 media
+data
 migrations
