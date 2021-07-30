@@ -9,14 +9,16 @@ services:
       - POSTGRES_DB=kv-task
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=docker
+      - POSTGRES_HOST=db
       - POSTGRES_HOST_AUTH_METHOD=trust
   api:
     build:
       context: .
-      dockerfile: .docker/api.Dockerfile
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
+    environment:
+      - SECRET_KEY=10fi8hw98dhfvw987erfhw-e98fjwdpe
     ports:
       - "8000:8000"
     depends_on:

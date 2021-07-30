@@ -1,6 +1,6 @@
 .PHONY: docker-up
 docker-up:
-	docker-compose rm postgres api
+	docker-compose rm db api
 	docker-compose up --build
 
 .PHONY: django-up
