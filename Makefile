@@ -4,5 +4,9 @@ docker-up:
 	docker-compose up --build
 
 .PHONY: django-up
-flask-up:
+django-up:
 	venv/bin/python manage.py runserver
+
+.PHONY: db-seed
+db-seed:
+	venv/bin/python manage.py seed post --number=100
