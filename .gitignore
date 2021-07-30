@@ -5,4 +5,5 @@ test.py
 test_image.png
 media
 data
+seeder.py
 migrations

@@ -5,3 +5,4 @@ data
 venv
 test.py
 test_image.png
+seeder.py
