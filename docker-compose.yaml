@@ -19,6 +19,10 @@ services:
       - .:/code
     environment:
       - SECRET_KEY=10fi8hw98dhfvw987erfhw-e98fjwdpe
+      - DJANGO_SETTINGS_MODULE=kv_task.settings
+      - DJANGO_SUPERUSER_USERNAME=admin
+      - DJANGO_SUPERUSER_PASSWORD=password123
+      - DJANGO_SUPERUSER_EMAIL=admin@example.com
     ports:
       - "8000:8000"
     depends_on:

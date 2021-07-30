@@ -66,10 +66,10 @@ WSGI_APPLICATION = 'kv_task.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('POSTGRES_DB'),
-        'USER': os.environ.get('POSTGRES_USER'),
-        'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
-        'HOST': os.environ.get('POSTGRES_HOST'),
+        'NAME': 'kv-task',
+        'USER': 'docker',
+        'PASSWORD': 'docker',
+        'HOST': 'db',
         'PORT': 5432,
     }
 }

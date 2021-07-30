@@ -19,7 +19,7 @@ class Post(models.Model):
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='commented_post')
-    content = models.TextField(max_length=250, null=False)
+    content = models.TextField(max_length=250, null=False, blank=False)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comment_author', db_index=True)
     attachment = models.FileField(upload_to='attachments/', null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
@@ -34,7 +34,7 @@ class Comment(models.Model):
 
 class Reply(models.Model):
     comment = models.ForeignKey(Comment, on_delete=models.CASCADE, related_name='replied_comments')
-    content = models.CharField(max_length=250, null=False)
+    content = models.TextField(max_length=250, null=False, blank=False)
     attachment = models.FileField(upload_to='attachments/', null=True)
     created = models.DateTimeField(auto_now_add=True)
 
