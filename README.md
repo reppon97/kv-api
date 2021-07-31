@@ -9,7 +9,7 @@
 
 ```make docker-init```
 
-It migrates the models, creates superuser and seeds 100 dummy users, posts, comments adn replies.
+It migrates the models, creates superuser and seeds 100 dummy users, posts, comments and replies.
 
 superuser username: admin
 
