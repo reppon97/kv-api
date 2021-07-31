@@ -20,6 +20,10 @@ superuser username: admin
 
 superuser password: password123
 
+## To Run:
+
+```make docker-up```
+
 ## Useful Links:
 [Posts APIView](http://0.0.0.0:8000/post)
 
