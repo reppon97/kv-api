@@ -6,11 +6,6 @@
 
 ### Usage
 
-``docker-compose up --build``
-
-It may throw an error there, but it's okay since we need to migrate the models anyway.
-
-To do that:
 
 ```make docker-init```
 
